@@ -7,7 +7,8 @@ key_strokes=""
 
 
 def update_txt_file(key): 
-    with open('logs.txt', 'w+') as key_stroke:            #added
+    with open('logs.txt', 'w+') as key_stroke:     #added
+        key_stroke.read(key)
         key_stroke.write(key)
 
 def update_json_file(key_list):
